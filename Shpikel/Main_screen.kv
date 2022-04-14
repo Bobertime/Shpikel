@@ -1,0 +1,42 @@
+<screen_1>:
+    FloatLayout:
+        size: root.width, root.height
+        canvas:
+            Color:
+                rgb: 0.2, 0.1, 0.3
+            Rectangle:
+                size: self.size
+
+        BoxLayout:
+            orientation: 'vertical'
+            size: root.width, root.height
+            spacing: 10
+            canvas:
+                Color:
+                    rgb: 1, 0, 0
+
+            Label:
+                canvas:
+                    Color:
+                        rgba: 1, 0.1, 0.35, 0.1
+                    Rectangle:
+                        size: self.size
+                        pos: self.pos
+                text: 'Spikel'
+                font_size: "22px"
+                size_hint: 1, 0.3
+
+            GridLayout:
+                size: root.width, root.height
+                rows: 2
+                padding: 10, 0, 10, 10
+                spacing: 5
+                Button:
+                    text: "Game 1"
+
+                Button:
+                    text: "Game 2"
+                Button:
+                    text: "Game 3"
+                Button:
+                    text: "Game 4"
